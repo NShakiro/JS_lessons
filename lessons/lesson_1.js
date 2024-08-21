@@ -6,60 +6,13 @@
 // ==== Variables  Переменные ===========
 
 
+
+ //console.log("Hello World!");
+
 // var
 // let
- //const pi = 3.14
-
-// === Присваивание переменной значения, переприсваивание.
-// document.write('Make a cold turkey sandwich' ,'<br>')
-//console.log('Hello world!2')
-let bread 
-let topping1 = 'turkey'
-let topping2 = `cheese`
-let sandwich = 'Cold turkey sandwich'
-
-bread = " black bread"
-
-let step1 = `1. Take a slice of ${bread}`
-
-document.write(step1 + '<br>'+ topping1 +'<br>',  topping2,' ', sandwich + '<br>')
-
-bread = 'gluten free'
-document.write(bread)
-let slice_Of_Bread = 'slice of bread'
-document.write( slice_Of_Bread)
-
-
-
-
-
-
-
- // let a = 'string', b, c
-
- // document.write(a ,'<br>')
- // a = 9
- // document.write(a)
- // a = 5
-
-/*
- let first = '3';
- let second = 5;
- console.log(first);
- console.log(second);
- console.log(first / second)
-*/
-// first = 7;
-// console.log(first);
-
-// const PI = 3.14;
+//const PI = 3.14;
 // PI = 7;
-
-//data types : number, string, boolean (false, true), null, undefiened, object
-
-
-// var three = "third";
-// console.log(three);
 
 
 
@@ -68,15 +21,37 @@ document.write( slice_Of_Bread)
 // Обязательные правила:
 // 1.  Имя переменной должно содержать только буквы, цифры или символы $ и _. 
 // 2.  Первый символ не должен быть цифрой. 
-// 3.  Нельзя использовать зарезервированные слова (let, var...)
-//  no keywords
+// 3.  Нельзя использовать зарезервированные слова (let, var...)key words
+// 4.  No keywords
 // Необязательные правила, но общепринятые:
-//    Значимое имя
-//    camelCase : userFirstName
-//    english alphabet
+// Значимое имя
+// camelCase : userFirstName
+//  english alphabet
+
+// === Присваивание переменной значения, переприсваивание.
+///document.write('Make a cold turkey sandwich' )
+// console.log('Hello world!2')
+
+var bread 
+let turkey, cheese
+
+//console.log(bread)
+
+bread = 'white bread'
+//console.log(bread)
+bread = " black bread"
+//console.log(bread)
+//bread = PI
+
+//console.log(bread)
+
+
+ 
+
 
 
 // =========== Типы данных =======
+//data types: number, string, boolean (false, true), null, undefiened, object, BigInt
 
 // string '' `` "2" 
 // number  // integer, float 2.4
@@ -87,40 +62,90 @@ document.write( slice_Of_Bread)
 // symbol
 // object   - later
 
+let a = 'string', b, c
 
-// typeof(variable)
+//console.log(a )
+  a = 9
+//console.log(a)
 
-// let num = 1.234;
-// let str = "hello";
+
+
+
+ let first = 9;
+ let second = 'ok';
+ //console.log(first);
+ //console.log(second);
+ let result = first / second
+ //console.log(first / second)
+//console.log(first + second)
+
+
+ //typeof(variable)
+
+let num = 1.234;
+let str = "hello";
 //  console.log(typeof(num), num);
 //  console.log(typeof str, str);
-// console.log(str);
+// console.log(result , typeof result);
 // console.log(num);
+
+
+
+
+
+
+
+
 
 // ============= string ======
 // string не разделяет отдельные символы и слова
 // Строка (string) в JavaScript должна быть заключена в кавычки.
 
-// let str2 = " Anna";
-// let str3 = '!';
-// let str4 = `hij`; //tilda
+let str2 = " Anna"
+let str3 = '!'
+let str4 = `hij` //tilda
 
-//  console.log(str2 + str3, str4);
+// console.log(str2 + str3, str4)
 
-// // === string concatenation, + 
+//  === string concatenation, + 
 
-// let concat = str2 + str3 + str4;
-// let concat2 = str2 + "   " + str3 + "   " + str4;
+let concat = str2 + str3 + str4
+let concat2 = str2 + "   " + str3 + "   " + str4;
 
-// document.write(concat, '<br>');
-// console.log(concat2);
+/*
+ console.log(concat)
+ console.log(concat2)
+*/
 
-// let name = 'Liza';
-// console.log('My name is ' + name);
+let name1 = 'Liza';
+//console.log(1 , 'My name is ' + name1)
 
 // `${name}` insert variable in a string
 
-// console.log(`My name is ${name}`);
+//console.log(2, `My name is ${name1}`)
+
+
+//Concatination:  + or ,
+
+let slice_Of_Bread = 'slice of bread'
+//console.log( slice_Of_Bread)
+
+let topping1 = 'turkey'
+let topping2 = `cheese`
+let sandwich = 'Cold turkey sandwich'
+
+let step1 = `1. Take a slice of ${bread}`
+
+console.log(step1 + ' ', '\n', topping1, topping2,  '\n', sandwich)
+
+
+
+
+
+//Дошла до этого места!!!
+
+
+
 
 
 // ===== длина строки, индекс буквы
@@ -130,8 +155,8 @@ document.write( slice_Of_Bread)
 // let space = '.';
 
 // //phrase.length
-// document.write(phrase.length, '<br>')
-// document.write(space.length, '<br>')
+///console.log(phrase.length)
+///console.log(space.length,)
 // console.log(phrase.length);
 // console.log(space.length);
 
@@ -139,8 +164,8 @@ document.write( slice_Of_Bread)
 // // "Hellow world!" 0-11
 // //  0123 ... 11
 
-// document.write(phrase[11], '<br>')
-// document.write(space[0])
+///console.log(phrase[11]')
+///console.log(space[0])
 // console.log(phrase[7]);
 //console.log(phrase[0]);
 
@@ -170,10 +195,10 @@ document.write( slice_Of_Bread)
 // let remainder = a % b
 // let division = a / b  //4 / 3 =
 
-// document.write (`a is ${a}`,  '<br>' )
-// document.write(`b is ${b}`,'<br>')
-// document.write(`remainder is ${remainder}`, '<br>')
-// document.write(`division is ${division}`, '<br>')
+///console.log (`a is ${a}`,  '<br>' )
+///console.log(`b is ${b}`,'<br>')
+///console.log(`remainder is ${remainder}`, '<br>')
+///console.log(`division is ${division}`, '<br>')
 // console.log(d, e);
 
 //   %  часто используется для определения четное / нечетное
@@ -197,6 +222,13 @@ document.write( slice_Of_Bread)
 // console.log(b);
 
 
+
+
+
+
+
+
+
 // ----   NaN    ->   Not a Number
 // NaN означает вычислительную ошибку. Это результат неправильной или 
 // неопределённой математической операции
@@ -207,6 +239,15 @@ document.write( slice_Of_Bread)
 
 // console.log(typeof NaN);
 
+
+
+
+
+
+
+
+
+
 // ============= boolean =====
 
 // let bool = true;
@@ -214,6 +255,15 @@ document.write( slice_Of_Bread)
 
 // console.log(bool, bool2);
 // console.log(typeof bool);
+
+
+
+
+
+
+
+
+
 
 // ======  операторы сравнения ===
 //comparison operators
@@ -224,6 +274,15 @@ document.write( slice_Of_Bread)
 
 // bool = (a === "5")
 // console.log(bool);
+
+
+
+
+
+
+
+
+
 
 // ============= Поменять тип данных ==
 //cnahging data type
