@@ -1,180 +1,281 @@
-//======math operators 
-// * , /, %, -, +, ++, --
+// ===== длина строки, индекс буквы
+
+const { stringify } = require( "mocha/lib/utils" )
+
+let phrase = 'Hello world!' //1-12
+let space = '.'
+
+phrase.length
+// console.log(phrase, phrase.length)
+// console.log(space, space.length)
+
+//  index:
+//"Hello" 0-4
+// 01234
+
+// console.log(phrase[4])
+// console.log(phrase[0])
+
+//==== String formatting
+//string.toLowerCase()
+//string.toUpperCase()
+
+// console.log(phrase.toLowerCase())
+// console.log(phrase.toUpperCase())
 
 
-//====== addition(+)
 
-// let mySum = 2 + 6
-// document.write(mySum, "<br>")
+
+
+// ============= data type - NUMBER ======
+// Числовой тип данных (number) представляет как целочисленные значения - int,
+//  так и числа с плавающей точкой - float, double
+// NaN
+// Infinity
+
+// =====  Math operators: + -  *  /  **  % =====
+
+// let a = 8
+// let b = 3
+// console.log(`a is ${a}`)
+// console.log(`b is ${b}`)
+
+//===== addition (+)
+//let c = a + b
+//console.log(c)
 
 //====== change a sign, substraction (-)
-
-// let mySub = 12 - 6
-// let num = 9 *(-1)
-// document.write(mySub, "<br>", num)
+let mySub = 12 - 6
+let num = 9 * -1
+//console.log(mySub, num)
 
 //===== multiplication (*)
-
-// let myMultiply = 2 * 6
-// document.write(myMultiply, "<br>")
+let myMultiply = 2 * 6
+//console.log(myMultiply)
 
 //===== division (/)
-
-//  let myDivision = 24 / 4
-//  document.write(myDivision, "<br>")
+let myDivision = 8/3
+//  console.log(myDivision)
 // console.log(typeof myDivision)
 
+//===== (**) exponentiation , возведение в степень
+// let c = 2 ** 3
+// console.log(c);  //2*2*2 = 2^3
+
 //===== modulus, remainder of division (even, odd numbers) (%)
+let remainder = 8 % 3  // 8 % 3 = 2    => 8-3 = 5; 5-3= 2  , 2 //1+1
+// console.log(`remainder is ${remainder}`)
 
-// let myModulus = 7 % 2 //(7 / 2 = 3  (1))
-//  //even, odd
-// document.write(myModulus, "<br>")
-// console.log(myModulus)
+//==== %  часто используется для определения четное- even / нечетное -odd
+let f = 15
+// console.log(f / 2 )
+// console.log(f % 2)
 
-//===== increment and decrement (--, ++)
-
-//  let myVariable = 10
-// // //document.write(myVariable, "<br>")
-//  --myVariable
-//  document.write(myVariable, "<br>")//after
-// document.write(myVariable, "<br>")
-// ++ myVariable 
-// document.write(myVariable, "<br>")
+//==== priority
+// console.log(5 - 7 + 2) //0
+// console.log(5 - (7 + 2)) //-4
 
 
-//===== (**) exponentiation
+//==== increment and decrement (--, ++)
+// num++  in general =>  num = num +1 or num += 1
+let myNum = 10
+//++myNum 
+// console.log('number is ' + myNum++)
+// console.log(myNum)
+--myNum
+// console.log('decrement '+ myNum--)
+// console.log(myNum)
+// ++myNum
+// console.log("increment" + myNum)
 
-// let myNum = 2 ** 4
-// document.write(myNum, "<br>")
-
-
-
-// ============= type number ======
-//int, double
 // ----   NaN    ->   Not a Number
-//NaN  означает вычислительную ошибку. Это результат неправильной или неопределённой математической операции
-//Infinity
-// let a
-// let myDivision = 24 / a
-//  document.write( myDivision, "<br>")
+// NaN означает вычислительную ошибку. Это результат неправильной или
+// неопределённой математической операции
 
-//======Another data types 
-// undefined (variable with no value), boolean(true, false), array, null (object), 
+let str7 = "abc"
+let dif = 5 - str7
+// console.log(dif)
+// console.log(typeof NaN)
 
-// let myNum = null
-// document.write(myNum, "<br>")
-// console.log(typeof myNum)
+// ---- Infinity   ->   результат деления на 0
+//console.log(5 / 0)
+//console.log(typeof(5 / 0))
 
-// ====== boolean 
-// boolean может принимать только два значения: true (истина)
-// и false (ложь).
+// The isFinite() method returns true if a value is a finite (not infinite) number.
+// Infinite (not finite) values are Infinity, -Infinity, or NaN
+
+// let inf = 5 / 1
+// console.log(isFinite(inf))
+
+
+
+
+
+
+// ============= data type - boolean ======
+// boolean может принимать только два значения: true (истина) и false (ложь).
 // Булевые значения также могут быть результатом сравнений
 
-// let bool1 = true; //false
-// let bool2 = (5 < 9);  // true
-// document.write(bool1, "<br> ", bool2)
+let bool = true
+let bool2 = false
+// console.log(bool, bool2)
+// console.log(typeof bool)
 
+// ======  Операторы сравнения ===
+//comparison operators: ==   ===  !=  !==   >  <   >=  <=
+// let a = 5
+// let b = 3
 
-// ===== string concatenation ,  +  ${}
-//assign value to a variable
+// bool = (a == 5)
+// console.log("not strict: " + bool)
 
-// let firstName = "Anna"
-// let lastName = "Karenina"
-// let fullName = firstName + lastName
-// let fullName2 = firstName + " " + lastName
+// bool = (a == '5')
+// console.log("not strict: " + bool)
 
-// console.log(fullName2)
-// document.write(firstName, " "+ lastName)
+// bool = (a === 5)
+// console.log("strict: " + bool)
 
-// let name = 'Liza'
-// //document.write('My name is ' + name)
+// bool = (a === "5")
+// console.log("strict: " + bool)
 
-// //`${name}`
-// document.write(`My name is ${name} and I like apple`+ "Anna")
-
-
-
-
-// ===== сравнение переменных 
-// comparison operators: ==   ===  !=  !==   >  <   >=  <=  
-
-//let a = "5";//string
-//let b = -10;
+// let a = "5";//string
+ //let b = -10;
 // let c = "c";
 // let C = "C"
 // let d = "0";
 
-//console.log(a)
+// console.log(a)
 // console.log(a == 5);  // true
 // console.log(a === 5); // false
 // console.log(b)
 // console.log(b != "-10");  // false
 // console.log(b !== "-10"); // true
-// console.log(c == C);
-// console.log(c === "c");
+// console.log(c == "C")
+// console.log(c === "c")
 
 // рекомендуется использовать === и !==
-let a = 3
-let d = 7
+// let a = 3
+// let d = 7
 // console.log(a > 0);
 // console.log(b > 0);
-//console.log(d >= 0);    // false
-//console.log(d <= 0);   //  true
+// console.log(d >= 0);    // false
+// console.log(d <= 0);   //  true
 //-(8)
 
 
 
-//=====   logical operators: &&, ||, !
-//|| (ИЛИ)       && (И)       ! (НЕ)
+//=======   Logical operators: &&, ||, ! ===================
+// || (ИЛИ)       && (И)       ! (НЕ)
+// Приоритет оператора И && больше, чем ИЛИ ||, поэтому он выполняется раньше.
 
-//let massaKg = 70;
-//console.log(massaKg > 50 || massaKg > 90);  // true || false
-//console.log(massaKg < 50 || massaKg > 60);  // true
+let massaKg = 70;
+// console.log(massaKg > 50 || massaKg > 90);  // true || false
+// console.log(massaKg < 50 || massaKg > 60);  // false || true
+// console.log(massaKg < 50 || massaKg < 60)  // false || false
 
-// console.log( true && true );   //  true
+// console.log( true || true );   //  true
 // console.log( false && true );  //  false
 // console.log( true && false );  //  false
 // console.log( false && false ); //  false
 
 // console.log(massaKg > 50 && massaKg < 90);  // true
 
-//console.log(!true);   // false
+// console.log(!true);   // false
 // console.log(!false);  //  true
 //  console.log(!(massaKg > 50)); // false
 
-// Приоритет оператора И && больше, чем ИЛИ ||, так что он выполняется раньше.
 
 
 
 
-//=====Conditional statement if and flowcharts (see presentation)
+// ============= Cnahging data types ====
 
-// let a = 3
-// let b = 5
+// --- в string:   '' + num; String(num);
+// --- в number:  +str ; Number(str)
 
-// if (a > b)
-// {
-//   document.write("'a' is bigger than 'b'")
+//let k = '345'
+// console.log(typeof +k)
+// console.log(typeof k)
+// let strToNumber = Number(k)
+// console.log(strToNumber, typeof strToNumber)
 
-// }
-// else{
-//   document.write("go home")
-// }
+// let str8 = "8"
+// let summa = 4 + str8 
+// console.log(summa, typeof summa)
 
-
-
-// if(a > b){
-//   document.write(a  “ is bigger than” b)}
-// else{
-//   document.write(a, “ is less than “, b)}
-
+// let c = 9
+// console.log(c, typeof c)
+// let newVar = String(c)
+// console.log(newVar, typeof newVar)
 
 
-// let a = 5
-// let b = 4
-// let sum = a + b
-// let operator
+
+
+//=========== Another data types =============
+// undefined (variable with no value),   null (object),
+// let someVar
+// console.log(someVar)
+
+// let myNum2 = null
+// console.log(myNum2)
+// console.log(typeof myNum2)
+
+
+
+
+
+
+//=====  Conditional statement if and flowcharts (see presentation)
+/**
+ * if(condition) {
+ *    operation
+ * }
+ * else{
+ *    operation
+ * }
+ */
+// example 1:
+// let a = 10
+// let c = 30
 // let result
-// if (operator == *){
-// result = a* b
-// document.write(“Your result is: “ + result}
+
+// if(a > c){
+//   console.log('a = ' + a, 'c = ' + c)
+//   result = "a is bigger"
+ 
+// }
+// else{
+//   console.log('a = ' + a, 'c = ' + c)
+//   result = "a is smaller"
+  
+// }
+// console.log(result)
+
+//example 2:
+// let login = 'MyLogin'
+// let pass = 12345
+
+// //fix code to correct
+// if (login == 'MyLogin' && pass == 12345) {
+//   console.log('click Submit')
+// } 
+// // if (pass == 12345) {  
+// //   console.log('Click Submit')
+// // } 
+// else {
+//   console.log('Invalid credentials')
+// }
+
+
+
+
+
+// //example 3:
+let a = 5
+let b = 4
+let operator = '*'
+let result
+if (operator == '*') {
+  result = a * b
+  console.log('Your result is: ' + result)
+}

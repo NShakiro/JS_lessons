@@ -60,7 +60,7 @@ bread = " black bread"
 // undefined
 // bigint 
 // symbol
-// object   - later
+// object   - later -не относится к примитивным
 
 let a = 'string', b, c
 
@@ -136,9 +136,24 @@ let sandwich = 'Cold turkey sandwich'
 
 let step1 = `1. Take a slice of ${bread}`
 
-console.log(step1 + ' ', '\n', topping1, topping2,  '\n', sandwich)
+//console.log(step1 + ' ', '\n', topping1, topping2,  '\n', sandwich)
 
+// ===== string concatenation ,  +  ${}
+//assign value to a variable
 
+// let firstName = "Anna"
+// let lastName = "Karenina"
+// let fullName = firstName + lastName
+// let fullName2 = firstName + " " + lastName
+
+// console.log(fullName2)
+// console.log(firstName, " "+ lastName)
+
+// let name = 'Liza'
+// //console.log('My name is ' + name)
+
+// //`${name}`
+// console.log(`My name is ${name} and I like apple`+ "Anna")
 
 
 

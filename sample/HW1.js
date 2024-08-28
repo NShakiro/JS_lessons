@@ -1,0 +1,14 @@
+const taxRate = 0.95 // налоговая ставка 9,5%
+const currency = 'USD' // код валюты
+const exchangeRate = 91.8745 // курс обмена
+const deliveryCost = 3.99 // стоимость доставки
+const startingPrice = 9.99 // базовая (стартовая) цена (к коротой в дальнейшем могут применяться скидки и наценки)
+const maxRetries = 10 // максимальное число попыток
+const minPassword = 8 // минимальная длина пароля
+const userAdmin = 'admin' // роль или права пользователя (админ/пользователь/редактор и т.п.)
+const mainPage = 'rogaikopyta.com' // главная страница сайта
+const fileType = 'PDF' // поддерживаемый тип файлов
+const errorMessage = 'error #404' // сообщение об ошибке
+const defaultLanguage = 'en' // язык по умолчанию
+const genderName = 'female' // название гендера (например, при заполнении анкетных данных)
+const marriageName = 'divorced' // название семейного статуса
