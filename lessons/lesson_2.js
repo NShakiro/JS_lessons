@@ -1,7 +1,5 @@
 // ===== длина строки, индекс буквы
 
-const { stringify } = require( "mocha/lib/utils" )
-
 let phrase = 'Hello world!' //1-12
 let space = '.'
 
