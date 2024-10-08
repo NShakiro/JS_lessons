@@ -1,6 +1,5 @@
 // const arr1 = [7, 4, 5, 6, 8];
 
-const { createInvalidLegacyPluginError } = require("mocha/lib/errors")
 
 // function callback(arr1) {
 //    let out = '';

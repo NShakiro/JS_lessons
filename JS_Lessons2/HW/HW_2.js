@@ -24,25 +24,24 @@ let num2 = 'k'
 let operator = '*'
 let result
 
-if (typeof num1 === 'number' && isNaN(num2) != true) {
-  if (operator == '+') {
-    result = num1 + num2
-  } 
-  else if (operator == '-') {
-    result = num1 - num2
-  } else if (operator == '*') {
-    result = num1 * num2
-  } else if (operator == '/') {
-    if (num2 == 0) {
-      console.log('Devision by 0 is not allowed')
-    } else {
-      result = num1 / num2
-    }
-  } else result = 'Please, enter correct operator'
-  console.log(result)
-} else {
-  console.log('Check your numbers!')
-}
+// if (typeof num1 === 'number' && isNaN(num2) != true) {
+//   if (operator == '+') {
+//     result = num1 + num2
+//   } else if (operator == '-') {
+//     result = num1 - num2
+//   } else if (operator == '*') {
+//     result = num1 * num2
+//   } else if (operator == '/') {
+//     if (num2 == 0) {
+//       console.log('Devision by 0 is not allowed')
+//     } else {
+//       result = num1 / num2
+//     }
+//   } else result = 'Please, enter correct operator'
+//   console.log(result)
+// } else {
+//   console.log('Check your numbers!')
+// }
 
 /**
  * 1.3 Решите задачу с помощью пройденных тем:
@@ -61,9 +60,11 @@ if (typeof num1 === 'number' && isNaN(num2) != true) {
 // if ((totalMeters += dayDistance) < wall) {
 //   console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). `)
 //   console.log('Go forward!')
-// }
-// else if (totalMeters == wall) {
-//   console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). `+ 'You reached your destination!')
+// } else if (totalMeters == wall) {
+//   console.log(
+//     `Day ${++daysNumber}, your distance is ${totalMeters} meter(s). ` +
+//       'You reached your destination!'
+//   )
 // }
 // totalMeters -= nightDown
 
@@ -71,9 +72,11 @@ if (typeof num1 === 'number' && isNaN(num2) != true) {
 // if ((totalMeters += dayDistance) < wall) {
 //   console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). `)
 //   console.log('Go forward!')
-// }
-// else if (totalMeters == wall) {
-//   console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). ` +'You reached your destination!')
+// } else if (totalMeters == wall) {
+//   console.log(
+//     `Day ${++daysNumber}, your distance is ${totalMeters} meter(s). ` +
+//       'You reached your destination!'
+//   )
 // }
 // totalMeters -= nightDown
 
@@ -81,9 +84,11 @@ if (typeof num1 === 'number' && isNaN(num2) != true) {
 // if ((totalMeters += dayDistance) < wall) {
 //   console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). `)
 //   console.log('Go forward!')
-// }
-// else if (totalMeters == wall) {
-//   console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). ` + 'You reached your destination!')
+// } else if (totalMeters == wall) {
+//   console.log(
+//     `Day ${++daysNumber}, your distance is ${totalMeters} meter(s). ` +
+//       'You reached your destination!'
+//   )
 // }
 // totalMeters -= nightDown
 
@@ -91,8 +96,30 @@ if (typeof num1 === 'number' && isNaN(num2) != true) {
 // if ((totalMeters += dayDistance) < wall) {
 //   console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). `)
 //   console.log('Go forward!')
-// }
-// else if (totalMeters == wall) {
-//  console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). ` + 'You reached your destination!')
+// } else if (totalMeters == wall) {
+//   console.log(
+//     `Day ${++daysNumber}, your distance is ${totalMeters} meter(s). ` +
+//       'You reached your destination!'
+//   )
 // }
 // totalMeters -= nightDown
+
+//this part is for lesson 3 with loops
+
+let dayDistance = 3
+let nightDown = 2
+let totalMeters = 0
+let daysNumber = 0
+let wall = 5
+
+for (i = 0; i <= wall; i++) {
+  if ((totalMeters += dayDistance) < wall) {
+    console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s).`)
+    console.log('Go forward!')
+  } else if (totalMeters >= wall) {
+    console.log(`Day ${++daysNumber}, your distance is ${totalMeters} meter(s). `)
+    console.log('You reached your destination!')
+    break
+  }
+  totalMeters -= nightDown
+}

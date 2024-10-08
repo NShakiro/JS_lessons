@@ -98,22 +98,21 @@ function showRecipeToClient(cupSize, coffeeType, isLactoseFree, milk = 'half&hal
    let recipe = [step1, step2, step3, step4, step5]
    let stepNum = 1
    let clientRecipe = ''
-   for (let i = 0; i < recipe.length; i++) {
 
+   for (let i = 0; i < recipe.length; i++) {
       if (isLactoseFree == true && recipe[i] == step4) continue
       clientRecipe = clientRecipe + (stepNum ++) + recipe[i] + '\n'
    }
    console.log(order + '\n' + clientRecipe + '\n' + orderPrice + '\n' + result)
-
 }
 
 //============================================
 
 showWelcomeMessage()
 showCupsOptions()
-showCoffeeTypesAndIngredients()
+//showCoffeeTypesAndIngredients()
 
-showRecipeToClient('small', 'latte', true)
+// showRecipeToClient('small', 'latte', true)
 
 //.log(getCupPrice("medium"));
 
