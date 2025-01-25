@@ -1,7 +1,7 @@
 //import SandwichClass from "./SandwichClass.js"
 import SandwichClass from "./SandwichClass.js"
 
-class Order extends SandwichClass {
+class Order extends SandwichClass{
    constructor(bread, cheese, topping, orderNumber) {
       // call the super class constructor and pass in the bread, cheese, topping parameters
       super(bread, cheese, topping)

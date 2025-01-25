@@ -110,13 +110,13 @@ class Predator extends Mammals {
   
 }
 let predator1 = new Predator("predator", 'green')
-console.log(predator1.name.toUpperCase());
-console.log(predator1.getName())
-//console.log(predator1.eyes);
-predator1.canEat()
-predator1.showBodyParts()
-predator1.breath()
-predator1.feedKids()
+// console.log(predator1.name.toUpperCase());
+// console.log(predator1.getName())
+console.log("==>>>"+ predator1.fangs);
+// predator1.canEat()
+// predator1.showBodyParts()
+// predator1.breath()
+// predator1.feedKids()
 
 
 console.log("\nclass Cat ======================\n")
@@ -134,27 +134,27 @@ class Cat extends Predator{
    }
    sayMeow() {
       let sound = 'meow'
-      if (this.name == 'tiger') {
+      if (this.name == 'cat') {
          sound = 'roar'
       }
       console.log(`This ${this.name} says ${sound}.`)
    }
    
 }
-//tiger is catsObject
-let tiger = new Cat("tiger", 'green', "Prosha")
-console.log(tiger.name.toUpperCase());
-console.log(tiger.nikName.toUpperCase())
-console.log("Has eyes: " + tiger.eyes);
-tiger.canEat()
+//cat is catsObject
+let cat = new Cat("cat", 'green', "Prosha")
+console.log(cat.name.toUpperCase());
+console.log(cat.nikName.toUpperCase())
+console.log("Has eyes: " + cat.eyes);
+cat.canEat()
 
 // you can use two ways to set a property
-//tiger.setSkin("red fur with black stripes")//1
-tiger.skin = "red fur"//2
-console.log(tiger.skin)
-tiger.showBodyParts()
-tiger.moves()
-tiger.sayMeow()
+//cat.setSkin("red fur with black stripes")//1
+cat.skin = "red fur"//2
+console.log(cat.skin)
+cat.showBodyParts()
+cat.moves()
+cat.sayMeow()
 
 
 

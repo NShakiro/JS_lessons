@@ -1,8 +1,12 @@
 /**
  * 
- *Простое определение: колбэк это функция, которая выполнится после другой функции, завершившей своё выполнение. Следовательно, отсюда и название, ‘call back’.
+ *Простое определение: колбэк это функция, которая выполнится после другой функции,
+  завершившей своё выполнение. Следовательно, отсюда и название, ‘call back’.
 
-Определение посложнее: В JavaScript, функции это объекты. Поэтому, функции, могут брать другие функции в виде аргументов и также могут быть возвращены другими функциями. Функции которые так делают, называются функциями высшего порядка. Любая функция, которая передается как аргумент — именуется callback-функцией.
+Определение посложнее: В JavaScript, функции это объекты. Поэтому,
+ функции, могут брать другие функции в виде аргументов и также могут быть
+  возвращены другими функциями. Функции которые так делают, называются функциями высшего порядка. 
+  Любая функция, которая передается как аргумент — именуется callback-функцией.
  */
 
 function multiply(a, b) {
@@ -22,7 +26,7 @@ function showResult(a, b, callback) {
    else return console.log("Your numbers are " + a + " and " + b)
 }
 
-showResult(3, 4, (a, b) => a * b)
+// showResult(3, 4, (a, b) => a * b)
 showResult(21, 3, multiply)
 //showResult(21, 3)
 
@@ -46,4 +50,19 @@ function calc2(a, b, sign ){
         return divide(a, b)
     }
 }
-console.log(calc2(7, 7, '*'))
+// console.log(calc2(7, 7, '*'))
+
+function typeLogin(login){
+    console.log(login)
+}
+function typePass (pass) {
+  console.log(pass)
+}
+function clickSubmit () {
+  console.log('Click submit')
+}
+function login(pass, login){ 
+    typeLogin(login)
+    typePass(pass)
+    clickSubmit()
+}

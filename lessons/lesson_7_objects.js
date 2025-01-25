@@ -36,7 +36,8 @@ It is a common practice to declare objects with the const keyword.
 // Проверка существования свойства: "key" in obj.
 // Перебор свойств объекта: цикл for(let key in obj).
 
-
+let obj =  new Object()
+let obj1 = {}
 //  ======= examples:
 
 //{key : values,} -property   {ключ : значение} - свойство

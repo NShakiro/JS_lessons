@@ -13,7 +13,7 @@ export const turkeySandwich = {
    cheese: "swiss",
    topping: "turkey",
 } 
-const pepperoniSandwich = {
+export const pepperoniSandwich = {
    name: "sandwich with pepperoni",
    bread: "white",
    cheese: "mozarella",
@@ -32,8 +32,11 @@ const sandwichNames = {
    pepperoni : "sandwich with pepperoni",
 };
 
-
-export default function showSandwichIngridients(topping){
+/**
+ * Topping which you want
+ * @param {string} topping 
+ */
+export  default function showSandwichIngridients(topping){
    console.log(`Ingredients for your ${sandwichNames[topping]}\n` )
    if (topping == 'salmon') {
      for(let el in salmonSandwich){
@@ -64,5 +67,5 @@ function setPrice(topping) {
     
 }
 
-showSandwichIngridients("turkey")
-setPrice(turkey)
+// showSandwichIngridients("turkey")
+// setPrice(turkey)
